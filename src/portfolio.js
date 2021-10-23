@@ -2,12 +2,12 @@
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
-// Summary And Greeting Section
-
 import emoji from "react-easy-emoji";
 
+// Summary And Greeting Section
+
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: true // Set to false to use static SVG
 };
 
 const greeting = {
@@ -28,6 +28,12 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/samyak-gangwal/",
   gmail: "sam.gangwal97@gmail.com",
   // Instagram and Twitter are also supported in the links!
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
