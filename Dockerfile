@@ -20,10 +20,16 @@ RUN npm install
 RUN npm audit fix
 
 # Bundle app source
-COPY . /app
+COPY ./ /usr/local/app/
+
+# use official nginx image as the base image
+FROM nginx:latest
+
+# Copy or replace build output to replace the default nignx containers
+COPY build /usr/share/nginx/html
 
 # Make port 3000 available to the world outside this container
-EXPOSE 3000
+EXPOSE 80
 
 # Run app.js when the container launches
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
