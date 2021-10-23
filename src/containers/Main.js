@@ -9,8 +9,8 @@ import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import Top from "./topbutton/Top";
 import Profile from "./profile/Profile";
-import {StyleProvider} from "../contexts/StyleContext";
-import {useLocalStorage} from "../hooks/useLocalStorage";
+import { StyleProvider } from "../contexts/StyleContext";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import "./Main.scss";
 
 const Main = () => {
@@ -21,24 +21,22 @@ const Main = () => {
     setIsDark(!isDark);
   };
 
-  render() {
-    return (
-      <div className={this.state.isDark ? "dark-mode" : null}>
-        <StyleProvider
-          value={{isDark: this.state.isDark, changeTheme: this.changeTheme}}
-        >
-          <Header />
-          <Greeting />
-          <Skills />
-          <StackProgress />
-          <Education />
-          <WorkExperience />
-          <Projects />
-          <Profile />
-          <Footer />
-          <Top />
-        </StyleProvider>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={isDark ? "dark-mode" : null}>
+      <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
+        <Header />
+        <Greeting />
+        <Skills />
+        <StackProgress />
+        <Education />
+        <WorkExperience />
+        <Projects />
+        <Profile />
+        <Footer />
+        <Top />
+      </StyleProvider>
+    </div>
+  );
+};
+
+export default Main;
