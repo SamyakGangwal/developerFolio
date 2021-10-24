@@ -143,7 +143,7 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Databse/Design", //Insert stack or technology you have experience in
+      Stack: "Database/Design", //Insert stack or technology you have experience in
       progressPercentage: "70%" //Insert relative proficiency in percentage
     },
     {
@@ -168,7 +168,7 @@ const workExperiences = {
       company: "Vicara",
       companylogo: require("./assets/images/vicara.jpeg"),
       date: "March 2021 – Present",
-      desc: "Worked on PATR - A code deployment platform which helps developers scale without any problems. Visit: https://patr.cloud",
+      desc: "Worked on PATR - A code deployment platform which helps developers scale without any problems.",
       descBullets: [
         "Implemented the features creating a static site, managed databases, docker deployment",
         "Wrote the logic for exporting the pipeline to gitlab ci/cd tool",
