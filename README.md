@@ -21,6 +21,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
 - [Linking portfolio to GitHub](#linking-portfolio-to-github)
+- [Linking blogs section to Medium](#linking-blogs-section-to-medium)
 - [Change and Customize](#change-and-customize-every-section-according-to-your-need)
 - [Deployment](#deployment)
 - [Technologies Used](#technologies-used)
@@ -128,6 +129,21 @@ If you are seeing something as shown below, follow these [instructions](https://
 ![ERROR](https://i.imgur.com/Hj6mu1K.png)
 
 If the above solution still doesn't work, visit the [wiki page](https://github.com/saadpasta/developerFolio/wiki/Github-Setup-For-Open-Source-Projects).
+
+## Linking blogs section to Medium
+
+Optionally, you can link the blogs section to your medium user account:
+
+* Inside the .env file, add key `MEDIUM_USERNAME` and assign your Medium username
+
+```env
+// .env
+MEDIUM_USERNAME = "YOUR MEDIUM USERNAME"
+```
+
+* For Github Action, change the environment variable `MEDIUM_USERNAME` in `.github/workflows/deploy.yml`
+
+Set `displayMediumBlogs` to true or false in portofolio.js to display fetched Medium blogs, defaults to true.
 
 ## Change and customize every section according to your need.
 
@@ -253,7 +269,7 @@ If you can help us with these. Please don't hesitate to open a [pull request](ht
   <tr>
     <td align="center"><a href="http://saadpasta.github.io"><img src="https://avatars2.githubusercontent.com/u/23307811?v=4" width="100px;" alt=""/><br /><sub><b>Saad Pasta</b></sub></a></td>
     <td align="center"><a href="https://github.com/kartikcho"><img src="https://avatars1.githubusercontent.com/u/48270786?v=4" width="100px;" alt=""/><br /><sub><b>Kartik Choudhary</b></sub></a></td>
-    <td align="center"><a href="https://naveen.syrusdark.website"><img src="https://avatars1.githubusercontent.com/u/49693820?v=4" width="100px;" alt=""/><br /><sub><b>Naveen M K</b></sub></a></td>
+    <td align="center"><a href="https://github.com/naveen521kk"><img src="https://avatars1.githubusercontent.com/u/49693820?v=4" width="100px;" alt=""/><br /><sub><b>Naveen M K</b></sub></a></td>
     <td align="center"><a href="http://www.muhammadhasham.com"><img src="https://avatars0.githubusercontent.com/u/17927649?v=4" width="100px;" alt=""/><br /><sub><b>Muhammad Hasham</b></sub></a></td>
   </tr>
 </table>
@@ -332,6 +348,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://thatdevsherry.pk"><img src="https://avatars.githubusercontent.com/u/40890226?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shehriyar Qureshi</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=thatdevsherry" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Rispectech"><img src="https://avatars.githubusercontent.com/u/90450963?v=4?s=100" width="100px;" alt=""/><br /><sub><b>respectech</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Rispectech" title="Code">💻</a></td>
+    <td align="center"><a href="http://braydentw.com"><img src="https://avatars.githubusercontent.com/u/47185402?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brayden</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/issues?q=author%3ABraydenTW" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/CanciuCostin"><img src="https://avatars.githubusercontent.com/u/27332434?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Canciu Costin</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=CanciuCostin" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SpectralGT"><img src="https://avatars.githubusercontent.com/u/78777556?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Atharv Singh</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=SpectralGT" title="Code">💻</a></td>
   </tr>
 </table>
 

@@ -3,6 +3,15 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+
+// Splash Screen
+
+const splashScreen = {
+  enabled: true, // set false to disable splash screen
+  animation: splashAnimation,
+  duration: 2000 // Set animation duration as per your animation
+};
 
 // Summary And Greeting Section
 
@@ -14,7 +23,7 @@ const greeting = {
   username: "Samyak Gangwal",
   title: "Hi all, I'm Samyak",
   subTitle: emoji(
-    "A passionate Software Developer 🚀 having an experience of backend web applications with Rust / Python and some other cool libraries and frameworks."
+    "A passionate Software Developer 🚀 having an experience of backend web applications with Rust / Python and some other cool languages and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1o5bNKiSJohen4XITtalFiFOws1cbga9u/view?usp=sharing",
@@ -84,7 +93,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "java",
-      fontAwesomeClassname: "fas fa-java"
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "python",
@@ -109,6 +118,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "linux",
       fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "kubernetes",
+      fontAwesomeClassname: "fab fa-kubernetes"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -375,6 +392,7 @@ export {
   illustration,
   greeting,
   socialMediaLinks,
+  splashScreen,
   skillsSection,
   educationInfo,
   techStack,
