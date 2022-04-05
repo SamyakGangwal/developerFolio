@@ -1,26 +1,17 @@
 # This file is the main docker file configurations
 
 # Official Node JS runtime as a parent image
-FROM node:latest
+FROM node:16
 
 # Set the working directory to ./app
-WORKDIR /app
+WORKDIR /usr/local/app
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-# COPY package.json ./
-
-# RUN apk add --no-cache git
-
-# # Install any needed packages
-# RUN npm install
-
-# # Audit fix npm packages
-# RUN npm audit fix
-
-# Bundle app source
 COPY ./ /usr/local/app/
+
+# Install any needed packages
+RUN npm install
+
+RUN npm run build
 
 # use official nginx image as the base image
 FROM nginx:latest

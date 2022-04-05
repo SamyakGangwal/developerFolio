@@ -25,3 +25,8 @@ yarn-error.log*
 #user generated content
 public/profile.json
 public/blogs.json
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
