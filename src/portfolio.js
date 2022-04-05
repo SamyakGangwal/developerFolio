@@ -52,9 +52,7 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY BACKEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji(
-      "⚡ Develop clean, robus and highly scalable applications"
-    ),
+    emoji("⚡ Develop clean, robus and highly scalable applications"),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
@@ -62,9 +60,7 @@ const skillsSection = {
     emoji(
       "⚡ A motivated individual with in-depth knowledge of languages and development tools"
     ),
-    emoji(
-      "⚡ A curious learner and creative team player"
-    )
+    emoji("⚡ A curious learner and creative team player")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -186,7 +182,7 @@ const workExperiences = {
       descBullets: [
         "Implemented the features creating a static site, managed databases, docker deployment",
         "Wrote the logic for exporting the pipeline to gitlab ci/cd tool",
-        "Designed the schema for user adding user backup email and phone number, storing static site data, domains and personal emails",
+        "Designed the schema for user adding user backup email and phone number, storing static site data, domains and personal emails"
       ]
     },
     {
@@ -403,6 +399,6 @@ export {
   // blogSection,
   // talkSection,
   // podcastSection,
-  contactInfo,
+  contactInfo
   // twitterDetails
 };
