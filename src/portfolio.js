@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Software Developer 🚀 having an experience of backend web applications with Rust / Python and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1o5bNKiSJohen4XITtalFiFOws1cbga9u/view?usp=sharing",
+    "https://drive.google.com/file/d/1rDBou8NEPMfIBqBflZANw8bmymQuwCuT/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -121,14 +121,26 @@ const educationInfo = {
     {
       schoolName: "Savitri Bai Phule Pune University",
       logo: require("./assets/images/sppu.jpeg"),
-      subHeader: "Bachelor's Of Computer Engineering in Computer Engineering",
-      duration: "August 2017 - August 2021",
+      subHeader: "Bachelor's Of Engineering in Computer Engineering",
+      duration: "August 2017 - May 2021",
       desc: "Participated and won Winjit Hackathon and published 1 research paper.",
       descBullets: [
         "Participated and won in Winjit Hackathon ",
         "Published research paper on thermal anomaly detection and breast cancer prediction using DITI and Deep Learning Approach",
         "Organised coding competitions and other technical events"
       ]
+    },
+    {
+      schoolName: "University Of Massachusetts at Boston",
+      logo: require("./assets/images/umassb.png"),
+      subHeader: "Masters's Of Science in Computer Engineering",
+      duration: "September 2022 - May 2024",
+      // desc: "Participated and won Winjit Hackathon and published 1 research paper.",
+      // descBullets: [
+      //   "Participated and won in Winjit Hackathon ",
+      //   "Published research paper on thermal anomaly detection and breast cancer prediction using DITI and Deep Learning Approach",
+      //   "Organised coding competitions and other technical events"
+      // ]
     }
   ]
 };
@@ -163,12 +175,13 @@ const workExperiences = {
       role: "Software Engineer",
       company: "Vicara",
       companylogo: require("./assets/images/vicara.jpeg"),
-      date: "March 2021 – Present",
+      date: "March 2021 – July 2022",
       desc: "Worked on PATR - A code deployment platform which helps developers scale without any problems.",
       descBullets: [
+        "Worked on a cloud platform (patr.cloud)",
         "Implemented the features creating a static site, managed databases, docker deployment",
         "Wrote the logic for exporting the pipeline to gitlab ci/cd tool",
-        "Designed the schema for user adding user backup email and phone number, storing static site data, domains and personal emails"
+        "Designed the schema for user adding user backup email and phone number, storing static site data, domains and personal emails",
       ]
     },
     {
@@ -199,7 +212,11 @@ const workExperiences = {
     }
   ]
 };
+/*
 
+2 things how to put hyperlink in a json variable and add an svg to font-awesome
+
+*/
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 

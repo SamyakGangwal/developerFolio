@@ -1,7 +1,7 @@
 # This file is the main docker file configurations
 
 # Official Node JS runtime as a parent image
-FROM node:16
+FROM node:16 as build
 
 # Set the working directory to ./app
 WORKDIR /usr/local/app
@@ -17,7 +17,7 @@ RUN npm run build
 FROM nginx:latest
 
 # Copy or replace build output to replace the default nignx containers
-COPY build /usr/share/nginx/html
+COPY --from=build /usr/local/app/build /usr/share/nginx/html
 
 # Make port 3000 available to the world outside this container
 EXPOSE 80
