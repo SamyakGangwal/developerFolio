@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: default
+steps:
+  - name: build
+    image: node:16.14.2-buster
+    commands:
+      - npm install
+      - npm run build
