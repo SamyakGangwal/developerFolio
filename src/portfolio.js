@@ -46,8 +46,8 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY BACKEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji("⚡ Develop clean, robus and highly scalable applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Develop clean, robust and highly scalable applications"),
+    emoji("⚡ Progressive Web Applications ( PWA ) in normal and Single Page Applications ( SPA ) Stacks"),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     ),
