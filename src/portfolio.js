@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Software Developer 🚀 having an experience of backend web applications with Rust / Python and some other cool languages and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1695qWhXUrKroyr8uOuAQdOOZoC43OSWw/view?usp=sharing",
+    "https://drive.google.com/file/d/1IWBz9sPbTS9OX-qVog-2Z3cacDfCTDsd/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
