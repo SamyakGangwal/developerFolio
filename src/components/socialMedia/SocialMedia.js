@@ -115,6 +115,7 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+      ) : null}
 
       {socialMediaLinks.kaggle ? (
         <a
