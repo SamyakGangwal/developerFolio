@@ -53,7 +53,9 @@ const skillsSection = {
   subTitle: "CRAZY BACKEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji("⚡ Develop clean, robust and highly scalable applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and Single Page Applications ( SPA ) Stacks"),
+    emoji(
+      "⚡ Progressive Web Applications ( PWA ) in normal and Single Page Applications ( SPA ) Stacks"
+    ),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     ),
@@ -89,7 +91,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "java",
-      fontAwesomeClassname: "fas fa-java"
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "python",
@@ -117,7 +119,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "kubernetes",
-      fontAwesomeClassname: "fab fa-kubernetes"
+      fontAwesomeClassname: "lni lni-kubernetes"
     },
     {
       skillName: "aws",
@@ -133,22 +135,22 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Savitri Bai Phule Pune University",
+      schoolName: "Savitribai Phule Pune University",
       logo: require("./assets/images/sppu.jpeg"),
-      subHeader: "Bachelor's Of Engineering in Computer Engineering",
+      subHeader: "Bachelor Of Engineering in Computer Engineering",
       duration: "August 2017 - May 2021",
       desc: "Participated and won Winjit Hackathon and published 1 research paper.",
       descBullets: [
         "Participated and won in Winjit Hackathon ",
         "Published research paper on thermal anomaly detection and breast cancer prediction using DITI and Deep Learning Approach",
-        "Organised coding competitions and other technical events"
+        "Organized coding competitions and other technical events"
       ]
     },
     {
       schoolName: "University Of Massachusetts at Boston",
       logo: require("./assets/images/umassb.png"),
-      subHeader: "Masters's Of Science in Computer Engineering",
-      duration: "September 2022 - May 2024",
+      subHeader: "Masters's Of Science in Computer Science",
+      duration: "September 2022 - May 2024"
       // desc: "Participated and won Winjit Hackathon and published 1 research paper.",
       // descBullets: [
       //   "Participated and won in Winjit Hackathon ",
@@ -186,36 +188,51 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Engineer / Graduate Assistant",
+      company: "UMass Boston",
+      companylogo: require("./assets/images/umassb.png"),
+      date: "July 2023 - Present",
+      desc: "Created an application to manage awards and grants for Office of Sponsored Research and Programs + Teaching Assistant",
+      descBullets: [
+        "Designed and developed a secure Django web application with a PostgreSQL database to manage subawards and subcontracts for a research team.",
+        "Implemented user authentication, data validation, and access control functionalities to ensure data integrity and security.",
+        "Established a relational database schema with parent-child tables to efficiently track award iterations and simplify data retrieval.",
+        "Developed a user-friendly interface for grant management including user signup, login, data entry, and report generation functionalities.",
+        "Conducted bi-weekly progress meetings and user testing sessions with stakeholders to gather feedback and ensure the application met their needs.",
+        "Technical Skills Demonstrated: Django, PostgreSQL, Database Design, User Authentication, Data Validation, Web Development"
+      ]
+    },
+    {
       role: "Software Engineer",
       company: "Vicara",
       companylogo: require("./assets/images/vicara.jpeg"),
-      date: "March 2021 – July 2022",
+      date: "March 2021 - July 2022",
       desc: "Worked on PATR - A code deployment platform which helps developers scale without any problems.",
       descBullets: [
-        "Worked on a cloud platform (patr.cloud)",
-        "Implemented the features creating a static site, managed databases, docker deployment",
-        "Wrote the logic for exporting the pipeline to gitlab ci/cd tool",
-        "Designed the schema for user adding user backup email and phone number, storing static site data, domains and personal emails",
+        "Developed and deployed key features for the PATR cloud platform, a one-stop solution for deploying web applications, databases, and containers. Implemented functionalities for deploying web apps using Docker, static sites via S3, and scalable databases on Kubernetes.",
+        "Integrated containerization with Kubernetes and utilized Nginx and Cloudflare for secure application exposure. Leveraged Docker containers and Kubernetes for scalable deployments, ensuring secure access through Nginx and Cloudflare.",
+        "Designed secure database schema for user payments and implemented role-based access control (RBAC). Established a secure database structure for user payments and enforced RBAC principles for granular access control within the platform.",
+        "Championed agile development methodologies to manage the software development lifecycle. Utilized daily stand-up meetings and weekly task allocation to streamline development. Mentored new hires and facilitated a collaborative development environment.",
+        "Automated the build process using CI/CD practices to improve development efficiency and reduce errors."
       ]
     },
     {
       role: "Software Engineer Intern",
-      company: "BitGlaze Technologies Pvt. Ltd.",
+      company: "BitGlaze Technologies",
       companylogo: require("./assets/images/bitglaze.jpeg"),
-      date: "September 2020 – March 2021",
+      date: "September 2020 - March 2021",
       desc: "worked on an analytical tool called Ace for TheBigSmallIdea",
       descBullets: [
-        "Developed the feature of screen-time of the people in a video",
-        "Wrote the logic for exporting the pipeline to gitlab ci/cd tool",
-        "Designed the schema for user adding user backup email and phone number, storing static site data, domains and personal emails",
-        "Developed a custom twitter search webApp"
+        "Developed interactive web applications for data analysis and visualization using Django, Python, and parallel computing for"
+        + "The Big Small Idea client. These applications included a word-cloud generator, a facial detection and screen-time calculator, "
+        + "and a Twitter data searcher, empowering users with data exploration and insights."
       ]
     },
     {
       role: "Student Developer",
       company: "Crio.do",
       companylogo: require("./assets/images/crio.png"),
-      date: "Feb 2020 – Sep 2020",
+      date: "Feb 2020 - Sep 2020",
       descBullets: [
         "Got hands-on experience on Product development, by carrying out projects related to Networking and Backend Development",
         "Learned to solve problems in a more systematic way, by choosing the right Data Structure, and breaking the problem to subproblems, writing a clean code",
@@ -390,7 +407,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-8573130278",
+  number: "+1-8573130278",
   email_address: "sam.gangwal97@gmail.com"
 };
 
