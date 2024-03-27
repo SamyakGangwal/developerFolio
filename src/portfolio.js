@@ -199,6 +199,7 @@ const workExperiences = {
         "Established a relational database schema with parent-child tables to efficiently track award iterations and simplify data retrieval.",
         "Developed a user-friendly interface for grant management including user signup, login, data entry, and report generation functionalities.",
         "Conducted bi-weekly progress meetings and user testing sessions with stakeholders to gather feedback and ensure the application met their needs.",
+        "Currently Working as a Teaching Assistant for the subject CS210: Intermediate Computing with Data Structures in Java",
         "Technical Skills Demonstrated: Django, PostgreSQL, Database Design, User Authentication, Data Validation, Web Development"
       ]
     },
