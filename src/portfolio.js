@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Software Developer 🚀 having an experience of backend web applications with Rust / Python and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1FTfvSAFEiWKf20CSdyWSO8f8I7YnGxCl",
+    "https://drive.google.com/file/d/1LzuuY_QoKSkJOlmpVrxtodSii-fQp_lZ/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -138,13 +138,13 @@ const educationInfo = {
       schoolName: "Savitribai Phule Pune University",
       logo: require("./assets/images/sppu.jpeg"),
       subHeader: "Bachelor Of Engineering in Computer Engineering",
-      duration: "August 2017 - May 2021",
-      desc: "Participated and won Winjit Hackathon and published 1 research paper.",
-      descBullets: [
-        "Participated and won in Winjit Hackathon ",
-        "Published research paper on thermal anomaly detection and breast cancer prediction using DITI and Deep Learning Approach",
-        "Organized coding competitions and other technical events"
-      ]
+      duration: "August 2017 - May 2021"
+      // desc: "Participated and won Winjit Hackathon and published 1 research paper.",
+      // descBullets: [
+      //   "Participated and won in Winjit Hackathon ",
+      //   "Published research paper on thermal anomaly detection and breast cancer prediction using DITI and Deep Learning Approach",
+      //   "Organized coding competitions and other technical events"
+      // ]
     },
     {
       schoolName: "University Of Massachusetts at Boston",
@@ -177,6 +177,11 @@ const techStack = {
     {
       Stack: "Programming",
       progressPercentage: "90%"
+    },
+    {
+      // Added a new entry for Embedded Programming, which covers work with embedded systems and hardware-related programming.
+      Stack: "Embedded Programming", 
+      progressPercentage: "75%" // Reflects the proficiency in working with embedded systems, including C, C++, RTOS, etc.
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -188,59 +193,68 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer / Graduate Assistant",
+      role: "Software Engineer",
+      company: "UMass Boston",
+      companylogo: require("./assets/images/caterpillar.png"),
+      date: "July 2023 - Present",
+      desc: "Contributing to the development of next-generation Electronic Control Modules (ECMs) by creating system automation tools, improving web "
+      + "application functionality, and enabling hardware compatibility for new product lines.",
+      // descBullets: [
+      //   "Developed Bash scripts to automate the entire system setup, reducing manual configuration time and improving consistency.",
+      //   "Enhanced the web application for flashing OS onto ECMs by updating the UI to support system rebooting and creating respective endpoints.",
+      //   "Built Foreign Function Interfaces (FFIs) in Rust to integrate C functions from the hardware abstraction layer, facilitating the use of legacy "
+      //   + "features in new ECM generations.",
+      //   "Created FFIs for Key Switch Manager functions, ensuring compatibility with next-generation ECMs.",
+      //   "Collaborated with cross-functional teams to ensure seamless integration and testing of software updates."
+      // ]
+    },
+    {
+      role: "Software Engineer",
       company: "UMass Boston",
       companylogo: require("./assets/images/umassb.png"),
       date: "July 2023 - Present",
-      desc: "Created an application to manage awards and grants for Office of Sponsored Research and Programs + Teaching Assistant",
-      descBullets: [
-        "Designed and developed a secure Django web application with a PostgreSQL database to manage subawards and subcontracts for a research team.",
-        "Implemented user authentication, data validation, and access control functionalities to ensure data integrity and security.",
-        "Established a relational database schema with parent-child tables to efficiently track award iterations and simplify data retrieval.",
-        "Developed a user-friendly interface for grant management including user signup, login, data entry, and report generation functionalities.",
-        "Conducted bi-weekly progress meetings and user testing sessions with stakeholders to gather feedback and ensure the application met their needs.",
-        "Currently Working as a Teaching Assistant for the subject CS210: Intermediate Computing with Data Structures in Java",
-        "Technical Skills Demonstrated: Django, PostgreSQL, Database Design, User Authentication, Data Validation, Web Development"
-      ]
+      desc: "Developed a secure Django application with PostgreSQL integration for Office of Research and Sponsored Programs (ORSP) to streamline subaward "
+      + "management, reducing processing time by 80% and improving data retrieval efficiency for over 1000 awards. Additionally, collaborated with the "
+      + "Animal Resource Core Facility (ARCF) to create a data management system that streamlined health issue reporting, resulting in a 90% improvement "
+      + "in operational efficiency. Served as a Teaching Assistant for CS 210, automating exam evaluation processes.",
+      // descBullets: [
+      //   "Designed and developed a secure Django web application with a PostgreSQL database to manage subawards and subcontracts for a research team.",
+      //   "Implemented user authentication, data validation, and access control functionalities to ensure data integrity and security.",
+      //   "Established a relational database schema with parent-child tables to efficiently track award iterations and simplify data retrieval.",
+      //   "Developed a user-friendly interface for grant management including user signup, login, data entry, and report generation functionalities.",
+      //   "Conducted bi-weekly progress meetings and user testing sessions with stakeholders to gather feedback and ensure the application met their needs.",
+      //   "Currently Working as a Teaching Assistant for the subject CS210: Intermediate Computing with Data Structures in Java",
+      //   "Technical Skills Demonstrated: Django, PostgreSQL, Database Design, User Authentication, Data Validation, Web Development"
+      // ]
     },
     {
       role: "Software Engineer",
       company: "Vicara",
       companylogo: require("./assets/images/vicara.jpeg"),
       date: "March 2021 - July 2022",
-      desc: "Worked on PATR - A code deployment platform which helps developers scale without any problems.",
-      descBullets: [
-        "Developed and deployed key features for the PATR cloud platform, a one-stop solution for deploying web applications, databases, and containers. Implemented functionalities for deploying web apps using Docker, static sites via S3, and scalable databases on Kubernetes.",
-        "Integrated containerization with Kubernetes and utilized Nginx and Cloudflare for secure application exposure. Leveraged Docker containers and Kubernetes for scalable deployments, ensuring secure access through Nginx and Cloudflare.",
-        "Designed secure database schema for user payments and implemented role-based access control (RBAC). Established a secure database structure for user payments and enforced RBAC principles for granular access control within the platform.",
-        "Championed agile development methodologies to manage the software development lifecycle. Utilized daily stand-up meetings and weekly task allocation to streamline development. Mentored new hires and facilitated a collaborative development environment.",
-        "Automated the build process using CI/CD practices to improve development efficiency and reduce errors."
-      ]
+      desc:
+        "Led the development of a secure, scalable, and cost-effective software deployment platform using Docker, Kubernetes, and AWS services, enabling" +
+        "over 10,000 users to efficiently deploy web apps, static sites, and databases while reducing cloud costs by 30% and improving deployment speed by" +
+        " 40%.",
+      // descBullets: [
+      //   "Developed and deployed key features for the PATR cloud platform, a one-stop solution for deploying web applications, databases, and containers. Implemented functionalities for deploying web apps using Docker, static sites via S3, and scalable databases on Kubernetes.",
+      //   "Integrated containerization with Kubernetes and utilized Nginx and Cloudflare for secure application exposure. Leveraged Docker containers and Kubernetes for scalable deployments, ensuring secure access through Nginx and Cloudflare.",
+      //   "Designed secure database schema for user payments and implemented role-based access control (RBAC). Established a secure database structure for user payments and enforced RBAC principles for granular access control within the platform.",
+      //   "Championed agile development methodologies to manage the software development lifecycle. Utilized daily stand-up meetings and weekly task allocation to streamline development. Mentored new hires and facilitated a collaborative development environment.",
+      //   "Automated the build process using CI/CD practices to improve development efficiency and reduce errors."
+      // ]
     },
     {
-      role: "Software Engineer Intern",
+      role: "Software Engineer",
       company: "BitGlaze Technologies",
       companylogo: require("./assets/images/bitglaze.jpeg"),
       date: "September 2020 - March 2021",
-      desc: "worked on an analytical tool called Ace for TheBigSmallIdea",
-      descBullets: [
-        "Developed interactive web applications for data analysis and visualization using Django, Python, and parallel computing for"
-        + "The Big Small Idea client. These applications included a word-cloud generator, a facial detection and screen-time calculator, "
-        + "and a Twitter data searcher, empowering users with data exploration and insights."
-      ]
-    },
-    {
-      role: "Student Developer",
-      company: "Crio.do",
-      companylogo: require("./assets/images/crio.png"),
-      date: "Feb 2020 - Sep 2020",
-      descBullets: [
-        "Got hands-on experience on Product development, by carrying out projects related to Networking and Backend Development",
-        "Learned to solve problems in a more systematic way, by choosing the right Data Structure, and breaking the problem to subproblems, writing a clean code",
-        "Received firsthand experience in developing a Spring Boot Application",
-        "Developed the backend for a food ordering application on Spring Boot, using Gradle",
-        "Built a Quiz evaluator and designed its API from scratch"
-      ]
+      desc: "Worked on a product called Ace for the client TheBigSmallIdea, developing microservices using Python and Django.",
+      // descBullets: [
+      //   "Built a word cloud generator and a screen time calculator microservice with parallel processing to improve video analysis performance.",
+      //   "Developed microservices for face detection to recognize celebrities in media and a custom Twitter data searcher to track hashtags and" +
+      //     "accounts, providing tailored insights."
+      // ]
     }
   ]
 };
