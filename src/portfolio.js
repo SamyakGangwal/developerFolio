@@ -180,7 +180,7 @@ const techStack = {
     },
     {
       // Added a new entry for Embedded Programming, which covers work with embedded systems and hardware-related programming.
-      Stack: "Embedded Programming", 
+      Stack: "Embedded Programming",
       progressPercentage: "75%" // Reflects the proficiency in working with embedded systems, including C, C++, RTOS, etc.
     }
   ],
@@ -197,8 +197,9 @@ const workExperiences = {
       company: "UMass Boston",
       companylogo: require("./assets/images/caterpillar.png"),
       date: "July 2023 - Present",
-      desc: "Contributing to the development of next-generation Electronic Control Modules (ECMs) by creating system automation tools, improving web "
-      + "application functionality, and enabling hardware compatibility for new product lines.",
+      desc:
+        "Contributing to the development of next-generation Electronic Control Modules (ECMs) by creating system automation tools, improving web " +
+        "application functionality, and enabling hardware compatibility for new product lines."
       // descBullets: [
       //   "Developed Bash scripts to automate the entire system setup, reducing manual configuration time and improving consistency.",
       //   "Enhanced the web application for flashing OS onto ECMs by updating the UI to support system rebooting and creating respective endpoints.",
@@ -213,10 +214,11 @@ const workExperiences = {
       company: "UMass Boston",
       companylogo: require("./assets/images/umassb.png"),
       date: "July 2023 - Present",
-      desc: "Developed a secure Django application with PostgreSQL integration for Office of Research and Sponsored Programs (ORSP) to streamline subaward "
-      + "management, reducing processing time by 80% and improving data retrieval efficiency for over 1000 awards. Additionally, collaborated with the "
-      + "Animal Resource Core Facility (ARCF) to create a data management system that streamlined health issue reporting, resulting in a 90% improvement "
-      + "in operational efficiency. Served as a Teaching Assistant for CS 210, automating exam evaluation processes.",
+      desc:
+        "Developed a secure Django application with PostgreSQL integration for Office of Research and Sponsored Programs (ORSP) to streamline subaward " +
+        "management, reducing processing time by 80% and improving data retrieval efficiency for over 1000 awards. Additionally, collaborated with the " +
+        "Animal Resource Core Facility (ARCF) to create a data management system that streamlined health issue reporting, resulting in a 90% improvement " +
+        "in operational efficiency. Served as a Teaching Assistant for CS 210, automating exam evaluation processes."
       // descBullets: [
       //   "Designed and developed a secure Django web application with a PostgreSQL database to manage subawards and subcontracts for a research team.",
       //   "Implemented user authentication, data validation, and access control functionalities to ensure data integrity and security.",
@@ -235,7 +237,7 @@ const workExperiences = {
       desc:
         "Led the development of a secure, scalable, and cost-effective software deployment platform using Docker, Kubernetes, and AWS services, enabling" +
         "over 10,000 users to efficiently deploy web apps, static sites, and databases while reducing cloud costs by 30% and improving deployment speed by" +
-        " 40%.",
+        " 40%."
       // descBullets: [
       //   "Developed and deployed key features for the PATR cloud platform, a one-stop solution for deploying web applications, databases, and containers. Implemented functionalities for deploying web apps using Docker, static sites via S3, and scalable databases on Kubernetes.",
       //   "Integrated containerization with Kubernetes and utilized Nginx and Cloudflare for secure application exposure. Leveraged Docker containers and Kubernetes for scalable deployments, ensuring secure access through Nginx and Cloudflare.",
@@ -249,7 +251,7 @@ const workExperiences = {
       company: "BitGlaze Technologies",
       companylogo: require("./assets/images/bitglaze.jpeg"),
       date: "September 2020 - March 2021",
-      desc: "Worked on a product called Ace for the client TheBigSmallIdea, developing microservices using Python and Django.",
+      desc: "Worked on a product called Ace for the client TheBigSmallIdea, developing microservices using Python and Django."
       // descBullets: [
       //   "Built a word cloud generator and a screen time calculator microservice with parallel processing to improve video analysis performance.",
       //   "Developed microservices for face detection to recognize celebrities in media and a custom Twitter data searcher to track hashtags and" +
