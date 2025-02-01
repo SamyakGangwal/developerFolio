@@ -194,9 +194,9 @@ const workExperiences = {
   experience: [
     {
       role: "Software Engineer",
-      company: "UMass Boston",
+      company: "Caterpillar",
       companylogo: require("./assets/images/caterpillar.png"),
-      date: "July 2023 - Present",
+      date: "November 2024 - Present",
       desc:
         "Contributing to the development of next-generation Electronic Control Modules (ECMs) by creating system automation tools, improving web " +
         "application functionality, and enabling hardware compatibility for new product lines."
